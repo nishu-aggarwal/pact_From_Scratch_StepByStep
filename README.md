@@ -23,4 +23,25 @@ it is safe to push the changes, if any.
 So, now lets start with step-by-step demo.
 
 # Let's Get Started
+Lets start by making our own API. It is just few steps away
+In terminal type below commands:
 
+1. Install JSON Server
+  
+        npm install -g json-server
+
+2. Create a db.json file with some data
+
+        vim db.json
+        
+ Add your json below:
+ 
+{
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
