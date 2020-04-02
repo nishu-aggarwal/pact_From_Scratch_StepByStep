@@ -1,4 +1,4 @@
-# pact_From_Scratch_StepByStep
+# Pact_From_Scratch_StepByStep (For Beginners)
 
 Pact is a contract testing framework where we can define consumer expectations for a given provider 
 (that can be an HTTP REST service). Contract testing on a broader level can be thought of testing
@@ -21,4 +21,6 @@ If API changes break anything, it also allows provider to know which of their co
 it is safe to push the changes, if any.
 
 So, now lets start with step-by-step demo.
+
+# Let's Get Started
 
