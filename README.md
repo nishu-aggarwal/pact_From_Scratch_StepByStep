@@ -153,3 +153,49 @@ Our API is created successfully. Now create a maven project in eclipse. Follow b
               // then
               assertEquals(200, response.getStatusCode().value());
           }
+
+  Now execute this "TestProvider" class using JUnit Test. After executing "test_consumer-test_provider.json" file will be       generated in target/pacts folder.
+  
+  This json file is important as Provider will use this file to verify the contract.
+  
+  Now create another maven project "pactProvider" and follow below steps:
+  1. Add above generated "test_consumer-test_provider.json" file in src/main/resources/pactFromConsumer folder 
+  1. In pom.xml file add below code:
+      
+          <build>
+            <plugins>
+              <plugin>
+                  <groupId>au.com.dius</groupId>
+                  <artifactId>pact-jvm-provider-maven</artifactId>
+                  <version>4.0.0</version>
+                  <configuration>
+                    <serviceProviders>
+                      <!-- You can define as many as you need, but each must have a unique name -->
+                      <serviceProvider>
+                        <name>test_provider</name>
+                        <!-- All the provider properties are optional, and have sensible defaults (shown below) -->
+                        <protocol>http</protocol>
+                        <host>localhost</host>
+                        <port>3000</port>
+                        <path>/</path>
+                       <pactFileDirectory>/Users/nisaggar1/Desktop/PactTesting/pactProvider/src/main/resources/pactFromConsumer</pactFileDirectory>
+                      </serviceProvider>
+                    </serviceProviders>
+                  </configuration>
+              </plugin>
+            </plugins>
+
+          </build>
+          
+   Here, in name, give provider name, port will be the port where json server is up. 
+   In pactFileDirectory, give the path of folder where you pasted json file.
+   
+   Thats it.
+   
+   Now, we will execute the above code. 
+   In terminal go to project folder "pactProvider" and execute below cmd:
+   
+            mvn pact:verify
+            
+   This will verify your provider against the contract that is generated.
+   
