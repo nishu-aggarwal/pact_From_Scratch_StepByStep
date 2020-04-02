@@ -1,0 +1,18 @@
+package pactTesting;
+
+import org.junit.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+////@SpringBootTest
+//public class PactProviderTest {
+////	@Test
+////	public void contextLoads() {
+////	}
+//	
+//}
+@RunWith(PactRunner.class)
+@Provider("test_provider")
+@PactFolder("pacts")
+public class PactProviderTest {
+    //...
+}

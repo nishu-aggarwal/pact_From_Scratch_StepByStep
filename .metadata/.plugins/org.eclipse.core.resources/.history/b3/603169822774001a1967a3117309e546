@@ -1,0 +1,8 @@
+package pactTesting;
+
+@RunWith(PactRunner.class)
+@Provider("test_provider")
+@PactFolder("pacts")
+public class pactRunner {
+
+}

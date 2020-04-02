@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="pactTesting.PactProviderTest" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="pactTesting.PactProviderTest" time="0.319">
+    <testcase name="initializationError" classname="pactTesting.PactProviderTest" time="0.004">
+      <error>java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

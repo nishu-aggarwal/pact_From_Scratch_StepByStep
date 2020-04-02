@@ -1,0 +1,23 @@
+package pactTesting;
+
+@RunWith(PactRunner.class)
+@Provider("test_provider")
+@PactFolder("pacts")
+public class PactProviderTest {
+    
+	@TestTarget
+	public final Target target = new HttpTarget("http", "localhost", 8082, "/spring-rest");
+	 
+	private static ConfigurableWebApplicationContext application;
+	 
+	@BeforeClass
+	public static void start() {
+	    application = (ConfigurableWebApplicationContext) 
+	      SpringApplication.run(MainApplication.class);
+	}
+	
+	@State("test GET")
+	public void toGetState() { }
+	 
+}
+

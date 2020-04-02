@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestProvider (1)" project="pactConsumer" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="pactTesting.TestProvider" time="0.203">
+    <testcase name="givenGet_whenSendRequest_shouldReturn200WithProperHeaderAndBody" classname="pactTesting.TestProvider" time="0.203">
+      <error>java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at sun.net.httpserver.ServerImpl.&lt;init&gt;(ServerImpl.java:100)
+	at sun.net.httpserver.HttpServerImpl.&lt;init&gt;(HttpServerImpl.java:50)
+	at sun.net.httpserver.DefaultHttpServerProvider.createHttpServer(DefaultHttpServerProvider.java:35)
+	at com.sun.net.httpserver.HttpServer.create(HttpServer.java:130)
+	at au.com.dius.pact.consumer.MockHttpServer.&lt;init&gt;(MockHttpServer.kt:198)
+	at au.com.dius.pact.consumer.MockHttpServerKt.mockServer(MockHttpServer.kt:34)
+	at au.com.dius.pact.consumer.ConsumerPactRunnerKt.runConsumerTest(ConsumerPactRunner.kt:12)
+	at au.com.dius.pact.consumer.BaseProviderRule.runPactTest(BaseProviderRule.java:148)
+	at au.com.dius.pact.consumer.BaseProviderRule.access$100(BaseProviderRule.java:21)
+	at au.com.dius.pact.consumer.BaseProviderRule$1.evaluate(BaseProviderRule.java:76)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

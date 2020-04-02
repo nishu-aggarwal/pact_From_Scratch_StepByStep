@@ -1,0 +1,11 @@
+package pactProvider;
+
+import org.junit.Test;
+
+@SpringBootTest
+public class PactApplication {
+	
+	@Test
+	void contextLoads() {
+	}
+}

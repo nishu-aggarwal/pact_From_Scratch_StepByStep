@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.junit.Rule"/>
+<fullyQualifiedTypeName name="au.com.dius.pact.consumer.Pact"/>
+<fullyQualifiedTypeName name="au.com.dius.pact.model.PactFragment"/>
+<fullyQualifiedTypeName name="au.com.dius.pact.consumer.dsl.PactDslWithProvider"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="au.com.dius.pact.consumer.PactProviderRule"/>
+<fullyQualifiedTypeName name="au.com.dius.pact.consumer.PactProviderRuleMk2"/>
+<fullyQualifiedTypeName name="au.com.dius.pact.model.RequestResponsePact"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="au.com.dius.pact.consumer.PactVerification"/>
+<fullyQualifiedTypeName name="org.springframework.web.client.RestTemplate"/>
+<fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+<fullyQualifiedTypeName name="junit.framework.Assert"/>
+<fullyQualifiedTypeName name="org.junit.Assert"/>
+<fullyQualifiedTypeName name="au.com.dius.pact.consumer.ConsumerPactTestMk2"/>
+<fullyQualifiedTypeName name="org.springframework.boot.autoconfigure.SpringBootApplication"/>
+<fullyQualifiedTypeName name="org.springframework.boot.test.context.SpringBootTest"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="au.com.dius.pact.provider.junit.loader.PactBroker"/>
+<fullyQualifiedTypeName name="org.springframework.test.context.junit.jupiter.SpringExtension"/>
+<fullyQualifiedTypeName name="org.springframework.boot.test.mock.mockito.MockBean"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="org.junit.jupiter.api.extension.ExtendWith"/>
+<fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
+<fullyQualifiedTypeName name="au.com.dius.pact.provider.junit.Provider"/>
+<fullyQualifiedTypeName name="au.com.dius.pact.provider.junit.loader.PactFolder"/>
+<fullyQualifiedTypeName name="au.com.dius.pact.provider.junit.target.TestTarget"/>
+<fullyQualifiedTypeName name="au.com.dius.pact.provider.junit.target.Target"/>
+<fullyQualifiedTypeName name="au.com.dius.pact.provider.junit.target.HttpTarget"/>
+<fullyQualifiedTypeName name="org.springframework.web.context.ConfigurableWebApplicationContext"/>
+<fullyQualifiedTypeName name="org.junit.BeforeClass"/>
+<fullyQualifiedTypeName name="pactProvider.PactApplication"/>
+<fullyQualifiedTypeName name="org.springframework.boot.SpringApplication"/>
+<fullyQualifiedTypeName name="au.com.dius.pact.provider.junit.State"/>
+<fullyQualifiedTypeName name="au.com.dius.pact.provider.junit.PactRunner"/>
+</qualifiedTypeNameHistroy>

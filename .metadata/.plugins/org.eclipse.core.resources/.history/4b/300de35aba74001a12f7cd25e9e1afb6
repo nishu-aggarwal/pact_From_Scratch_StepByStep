@@ -1,0 +1,10 @@
+package pactProvider;
+
+import org.junit.Test;
+
+public class PactApplication {
+	
+	@Test
+	void contextLoads() {
+	}
+}

@@ -1,0 +1,10 @@
+package pactTesting;
+
+
+@SpringBootTest
+public class PactProviderTest {
+	@Test
+	void contextLoads() {
+	}
+	
+}

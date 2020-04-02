@@ -1,0 +1,12 @@
+package pactProvider;
+
+import org.springframework.boot.SpringApplication;
+
+@SpringBootApplication
+public class PactApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(PactApplication.class, args);
+	}
+
+}

@@ -1,0 +1,37 @@
+package pactTesting;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import au.com.dius.pact.provider.junit.PactRunner;
+import au.com.dius.pact.provider.junit.Provider;
+import au.com.dius.pact.provider.junit.loader.PactFolder;
+import au.com.dius.pact.provider.junit.target.TestTarget;
+
+////@SpringBootTest
+//public class PactProviderTest {
+////	@Test
+////	public void contextLoads() {
+////	}
+//	
+//}
+@RunWith(PactRunner.class)
+@Provider("test_provider")
+@PactFolder("/Users/nisaggar1/Desktop/PactTesting/pactProvider/src/main/resources/pactFromConsumer")
+public class PactProviderTest {
+	@TestTarget
+	public final Target target = new HttpTarget("http", "localhost", 8082, "/spring-rest");
+	 
+	private static ConfigurableWebApplicationContext application;
+	 
+	@BeforeClass
+	public static void start() {
+	    application = (ConfigurableWebApplicationContext) 
+	      SpringApplication.run(MainApplication.class);
+	}
+	
+	@State("test GET")
+	public void toGetState() { }
+	 
+}

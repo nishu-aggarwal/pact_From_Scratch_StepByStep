@@ -1,0 +1,6 @@
+package pactProvider;
+
+@SpringBootApplication
+public class MainApplication {
+
+}

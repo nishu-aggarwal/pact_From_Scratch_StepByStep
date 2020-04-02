@@ -1,0 +1,14 @@
+package pactTesting;
+
+import org.junit.runner.RunWith;
+
+import au.com.dius.pact.provider.junit.PactRunner;
+import au.com.dius.pact.provider.junit.Provider;
+import au.com.dius.pact.provider.junit.loader.PactFolder;
+
+@RunWith(PactRunner.class)
+@Provider("test_provider")
+@PactFolder("pacts")
+public class pactRunner {
+
+}
